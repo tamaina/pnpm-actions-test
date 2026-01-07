@@ -4,7 +4,7 @@
   "engines": {
     "runtime": {
       "name": "node",
-      "version": "20.19.6",
+      "version": "^22.15.0",
       "onFail": "download"
     }
   },
