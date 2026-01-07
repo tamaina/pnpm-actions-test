@@ -19,3 +19,5 @@ jobs:
         run: pnpm install
 
       - run: node -v
+
+      - run: pnpm env
