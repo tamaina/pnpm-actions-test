@@ -3,7 +3,7 @@ packages:
 
 ignorePatchFailures: false
 
-ignoredBuiltDependencies:
+onlyBuiltDependencies:
   - re2
 
 minimumReleaseAge: 10080
