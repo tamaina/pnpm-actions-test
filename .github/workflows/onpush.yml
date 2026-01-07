@@ -20,4 +20,4 @@ jobs:
 
       - run: node -v
 
-      - run: pnpm env
+      - run: pnpm node -v
