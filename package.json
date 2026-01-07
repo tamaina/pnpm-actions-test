@@ -1,14 +1,14 @@
 {
   "name": "pnpm-actions-test",
   "version": "1.0.0",
-	"packageManager": "pnpm@10.26.2",
-	"engines": {
+  "packageManager": "pnpm@10.26.2",
+  "engines": {
     "runtime": {
       "name": "node",
       "version": "^22.15.0",
       "onFail": "download"
     }
-	},
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@peculiar/x509": "^1.14.2"
+  }
 }
