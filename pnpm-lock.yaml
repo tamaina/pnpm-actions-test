@@ -15,6 +15,15 @@ importers:
         specifier: runtime:^22.15.0
         version: runtime:22.21.1
 
+  packages/a:
+    dependencies:
+      '@peculiar/x509':
+        specifier: ^1.14.2
+        version: 1.14.2
+      node:
+        specifier: runtime:^22.15.0
+        version: runtime:22.21.1
+
 packages:
 
   '@peculiar/asn1-cms@2.6.0':

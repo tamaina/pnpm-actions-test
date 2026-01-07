@@ -1,0 +1,14 @@
+{
+  "name": "a",
+  "private": true,
+  "engines": {
+    "runtime": {
+      "name": "node",
+      "version": "^22.15.0",
+      "onFail": "download"
+    }
+  },
+  "dependencies": {
+    "@peculiar/x509": "^1.14.2"
+  }
+}
