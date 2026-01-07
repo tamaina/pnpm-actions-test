@@ -8,7 +8,11 @@
       "onFail": "download"
     }
   },
+  "scripts": {
+    "start": "node ./re2.mjs"
+  },
   "dependencies": {
-    "@simplewebauthn/server": "^13.2.2"
+    "@simplewebauthn/server": "^13.2.2",
+    "re2": "1.23.0"
   }
 }

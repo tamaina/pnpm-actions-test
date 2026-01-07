@@ -22,3 +22,5 @@ jobs:
       - run: node -v
 
       - run: pnpm node -v
+
+      - run: pnpm --filter a start
