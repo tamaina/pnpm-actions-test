@@ -21,7 +21,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@peculiar/x509": "^1.14.2"
-  }
+  "dependencies": {}
 }
