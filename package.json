@@ -7,7 +7,7 @@
       "name": "node",
       "version": "^22.15.0 || ^24.10.0",
       "onFail": "download"
-    },
+    }
 	},
   "description": "",
   "main": "index.js",
