@@ -7,6 +7,3 @@ minimumReleaseAge: 10080
 
 onlyBuiltDependencies:
   - re2
-
-patchedDependencies:
-  re2: patches/re2.patch

@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-patchedDependencies:
-  re2:
-    hash: 2a869653be48b2b2f594cafb0f1a96a3dbe4d2afdc6e042ffc7780dbd62086f1
-    path: patches/re2.patch
-
 importers:
 
   .:
@@ -27,7 +22,7 @@ importers:
         version: runtime:22.21.1
       re2:
         specifier: 1.23.0
-        version: 1.23.0(patch_hash=2a869653be48b2b2f594cafb0f1a96a3dbe4d2afdc6e042ffc7780dbd62086f1)
+        version: 1.23.0
 
 packages:
 
@@ -791,7 +786,7 @@ snapshots:
 
   pvutils@1.1.5: {}
 
-  re2@1.23.0(patch_hash=2a869653be48b2b2f594cafb0f1a96a3dbe4d2afdc6e042ffc7780dbd62086f1):
+  re2@1.23.0:
     dependencies:
       install-artifact-from-github: 1.4.0
       nan: 2.24.0
