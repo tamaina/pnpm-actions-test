@@ -10,15 +10,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - run: curl -fsSL https://get.pnpm.io/install.sh | sh -
-      - run: |
-          export PNPM_HOME="/home/runner/.local/share/pnpm"
-          case ":$PATH:" in
-            *":$PNPM_HOME:"*) ;;
-            *) export PATH="$PNPM_HOME:$PATH" ;;
-          esac
-
-      - run: pnpm node -v
+      - uses: pnpm/action-setup@1e1c8eafbd745f64b1ef30a7d7ed7965034c486c
+        name: Install pnpm
+        with:
+          standalone: true
+          cache: true
 
       - name: Install dependencies
         run: pnpm i --frozen-lockfile
