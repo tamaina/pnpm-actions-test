@@ -22,6 +22,7 @@ jobs:
         run: pnpm i --frozen-lockfile
 
       - run: node -v
+      - run: which node
 
       - run: pnpm node -v
 
