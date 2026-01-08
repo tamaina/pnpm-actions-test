@@ -10,11 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - uses: pnpm/action-setup@1e1c8eafbd745f64b1ef30a7d7ed7965034c486c
-        name: Install pnpm
-        with:
-          standalone: true
-          cache: true
+      - run: curl -fsSL https://get.pnpm.io/install.sh | sh -
 
       - run: pnpm node -v
 
