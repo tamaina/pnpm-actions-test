@@ -24,3 +24,9 @@ jobs:
       - run: pnpm node -v
 
       - run: pnpm --filter a start
+
+      - run: pnpm -r rebuild
+        if: always()
+      
+      - run: pnpm --filter a start
+        if: always()
