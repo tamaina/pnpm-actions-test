@@ -17,7 +17,7 @@ jobs:
           cache: true
 
       - name: Install dependencies
-        run: pnpm i --frozen-lockfile
+        run: pnpm i
 
       - run: node -v
       - run: which node
