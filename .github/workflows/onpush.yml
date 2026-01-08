@@ -11,8 +11,12 @@ jobs:
         uses: actions/checkout@v6
 
       - run: curl -fsSL https://get.pnpm.io/install.sh | sh -
-      - run: cat /home/runner/.bashrc
-      - run: source /home/runner/.bashrc
+      - run: |
+          export PNPM_HOME="/home/runner/.local/share/pnpm"
+          case ":$PATH:" in
+            *":$PNPM_HOME:"*) ;;
+            *) export PATH="$PNPM_HOME:$PATH" ;;
+          esac
 
       - run: pnpm node -v
 
