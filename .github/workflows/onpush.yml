@@ -10,6 +10,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - run: sudo apt-get remove nodejs
+
       - uses: pnpm/action-setup@1e1c8eafbd745f64b1ef30a7d7ed7965034c486c
         name: Install pnpm
         with:
