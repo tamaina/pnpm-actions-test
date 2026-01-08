@@ -3,7 +3,10 @@ packages:
 
 ignorePatchFailures: false
 
+minimumReleaseAge: 10080
+
 onlyBuiltDependencies:
   - re2
 
-minimumReleaseAge: 10080
+patchedDependencies:
+  re2: patches/re2.patch
